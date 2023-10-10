@@ -13,3 +13,9 @@ pip install -r requirements.txt
 # Random walk example
 python rw.py
 ```
+
+## Studies
+
+### Random walk
+
+![](./docs/rw.png)
