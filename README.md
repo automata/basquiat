@@ -1,6 +1,6 @@
 # Basquiat
 
-<img src="./docs/rw3.jpg" width="300px" />
+<img src="./docs/rw3.jpg" width="512px" />
 
 Small Mojo :fire: and Python library for creative coding powered by
 [Cairo](https://www.cairographics.org/) (through [pycairo](https://pycairo.readthedocs.io/en/latest/)).
