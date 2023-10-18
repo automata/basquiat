@@ -11,6 +11,7 @@ struct Point:
 fn draw_lines(filename: String="lines.png") raises:
   let size = 1024
   let r = Renderer(size, size)
+  r.clear_canvas(0, 0, 0)
   let step = 30
   var points: DynamicVector[Point] = DynamicVector[Point](0)
   var n_points_per_line = 0
