@@ -63,7 +63,14 @@ A couple of random walkers with 100k steps.
 
 ### Lines
 
-Inspired by Joy Division's cover.
+Inspired by Joy Division's [Unknown Pleasure](https://en.wikipedia.org/wiki/Unknown_Pleasures) album cover.
 
 ![](./docs/lines.jpg)
 
+### Noise
+
+Some experiments with uniform and Perlin noise.
+
+![](./docs/perlin.jpg)
+![](./docs/perlin2.jpg)
+![](./docs/noise.jpg)
