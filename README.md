@@ -6,6 +6,17 @@ Small Mojo :fire: and Python library for creative coding powered by
 [Cairo](https://www.cairographics.org/) (through [pycairo](https://pycairo.readthedocs.io/en/latest/)).
 The name is a humble homage to the artist [Jean-Michel Basquiat](https://en.wikipedia.org/wiki/Jean-Michel_Basquiat).
 
+Both Mojo and Python implementations depend on `pycairo`. I'm planning to migrate
+to cffi `libcairo` directly from Mojo when possible, but we already have the
+Mojo implementation running almost 3x faster than Python:
+
+```
+% time mojo rw.mojo
+mojo rw.mojo  3.14s user 0.09s system 92% cpu 3.493 total
+% time python rw.py
+python rw.py  8.69s user 0.15s system 126% cpu 6.990 total
+```
+
 *Note:* only a few drawing primitives are exposed from Cairo right now, but
 more to come pretty soon!
 
