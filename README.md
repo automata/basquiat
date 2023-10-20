@@ -1,6 +1,6 @@
 # Basquiat
 
-<img src="./docs/rw3.jpg" width="512px" />
+<img src="./docs/rw2.jpg" width="512px" />
 
 Small Mojo :fire: and Python library for creative coding powered by
 [Cairo](https://www.cairographics.org/) (through [pycairo](https://pycairo.readthedocs.io/en/latest/)).
@@ -70,6 +70,7 @@ also the Mojo and Python implementations in `basquiat/`.
 A couple of random walkers with 100k steps.
 
 ![](./docs/rw5.jpg)
+![](./docs/rw3.jpg)
 ![](./docs/rw6.jpg)
 
 ### Lines
