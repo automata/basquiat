@@ -4,10 +4,9 @@ import numpy as np
 import cairo
 
 class Renderer:
-    def __init__(self, width, height=None):
+    def __init__(self, width, height):
         self.width = width
-        if not height:
-            self.height = width
+        self.height = height
         self.surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, self.width, self.height)
         self.ctx = cairo.Context(self.surface)
         # Normalize canvas
@@ -19,6 +18,15 @@ class Renderer:
 
     def to_png(self, file_name):
         self.surface.write_to_png(file_name)
+
+    def line_width(self, w):
+        self.ctx.set_line_width(w)
+
+    def color(self, r, g, b, a=None):
+        if a:
+            self.ctx.set_source_rgba(r, g , b, a)
+        else:
+            self.ctx.set_source_rgb(r, g , b)
 
     def line(self, x1, y1, x2, y2, r=.0, g=.0, b=.0, width=0.001):
         self.ctx.set_line_width(width)
